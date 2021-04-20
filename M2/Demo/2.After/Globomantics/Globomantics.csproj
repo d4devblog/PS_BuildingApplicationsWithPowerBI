@@ -1,0 +1,59 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="App\App.tsx" />
+    <None Remove="App\Components\AppHeader.tsx" />
+    <None Remove="App\Components\AppNavigation.tsx" />
+    <None Remove="App\Components\PowerBIReport.tsx" />
+    <None Remove="App\Pages\Home.tsx" />
+    <None Remove="App\Pages\Orders.tsx" />
+    <None Remove="App\Pages\Purchasing.tsx" />
+    <None Remove="App\Pages\SalesReports.tsx" />
+    <None Remove="App\PowerBI\ReportEmbedding.ts" />
+    <None Remove="App\Theme\Dark.tsx" />
+    <None Remove="App\Theme\Default.tsx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Folder Include="wwwroot\js\" />
+    <Folder Include="wwwroot\images\" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\Globomantics.PowerBI\Globomantics.PowerBI.csproj" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <TypeScriptCompile Include="App\App.tsx" />
+    <TypeScriptCompile Include="App\Components\AppHeader.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="App\Components\AppNavigation.tsx" />
+    <TypeScriptCompile Include="App\Components\PowerBIReport.tsx" />
+    <TypeScriptCompile Include="App\Pages\Orders.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="App\Pages\Home.tsx" />
+    <TypeScriptCompile Include="App\Pages\Purchasing.tsx" />
+    <TypeScriptCompile Include="App\Pages\SalesReports.tsx" />
+    <TypeScriptCompile Include="App\PowerBI\ReportEmbedding.ts" />
+    <TypeScriptCompile Include="App\Theme\Dark.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="App\Theme\Default.tsx" />
+  </ItemGroup>
+
+</Project>

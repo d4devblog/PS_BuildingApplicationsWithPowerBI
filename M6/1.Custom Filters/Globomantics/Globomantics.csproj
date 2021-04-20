@@ -1,0 +1,97 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="App\App.tsx" />
+    <None Remove="App\Components\AppHeader.tsx" />
+    <None Remove="App\Components\AppNavigation.tsx" />
+    <None Remove="App\Components\PowerBIDashboard.tsx" />
+    <None Remove="App\Components\PowerBIReport.tsx" />
+    <None Remove="App\Components\PowerBISingleVisual.tsx" />
+    <None Remove="App\Components\PowerBITile.tsx" />
+    <None Remove="App\Components\ReportFilters.tsx" />
+    <None Remove="App\Components\ReportMenu.tsx" />
+    <None Remove="App\Components\ReportPages.tsx" />
+    <None Remove="App\Pages\Home.tsx" />
+    <None Remove="App\Pages\Orders.tsx" />
+    <None Remove="App\Pages\Purchasing.tsx" />
+    <None Remove="App\Pages\SalesReports.tsx" />
+    <None Remove="App\PowerBI\DashboardEmbedding.ts" />
+    <None Remove="App\PowerBI\FilterBuilder.ts" />
+    <None Remove="App\PowerBI\ReportEmbedding.ts" />
+    <None Remove="App\PowerBI\SingleVisualEmbedding.ts" />
+    <None Remove="App\PowerBI\TileEmbedding.ts" />
+    <None Remove="App\Theme\Dark.tsx" />
+    <None Remove="App\Theme\Default.tsx" />
+    <None Remove="App\Theme\PowerBI.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Folder Include="wwwroot\js\" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\Globomantics.PowerBI\Globomantics.PowerBI.csproj" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <TypeScriptCompile Include="App\App.tsx" />
+    <TypeScriptCompile Include="App\Components\AppHeader.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="App\Components\AppNavigation.tsx" />
+    <TypeScriptCompile Include="App\Components\PowerBISingleVisual.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="App\Components\PowerBITile.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="App\Components\PowerBIDashboard.tsx" />
+    <TypeScriptCompile Include="App\Components\PowerBIReport.tsx" />
+    <TypeScriptCompile Include="App\Components\ReportFilters.tsx" />
+    <TypeScriptCompile Include="App\Components\ReportMenu.tsx" />
+    <TypeScriptCompile Include="App\Components\ReportPages.tsx" />
+    <TypeScriptCompile Include="App\Pages\Orders.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="App\Pages\Home.tsx" />
+    <TypeScriptCompile Include="App\Pages\Purchasing.tsx" />
+    <TypeScriptCompile Include="App\Pages\SalesReports.tsx" />
+    <TypeScriptCompile Include="App\PowerBI\DashboardEmbedding.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="App\PowerBI\FilterBuilder.ts" />
+    <TypeScriptCompile Include="App\PowerBI\SingleVisualEmbedding.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="App\PowerBI\TileEmbedding.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="App\PowerBI\ReportEmbedding.ts" />
+    <TypeScriptCompile Include="App\Theme\Dark.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="App\Theme\Default.tsx" />
+    <TypeScriptCompile Include="App\Theme\PowerBI.ts" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <None Update="App\Components\PowerBITile.js">
+      <DependentUpon>PowerBITile.tsx</DependentUpon>
+    </None>
+  </ItemGroup>
+
+</Project>

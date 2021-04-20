@@ -1,0 +1,95 @@
+﻿body {
+    font-family: Roboto, Helvetica, sans-serif;
+    margin: 0;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+}
+
+span.nav-logo {
+    background-image: url('../images/nav_logo_horizontal.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 40px;
+    width: 215px;
+    background-position: center center;
+    display: inline-block;
+    font-size: 0;
+}
+
+span.nav-logo-small {
+    background-image: url('../images/nav_logo_small.png');
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 40px;
+    background-position: left center;
+    background-size: contain;
+    margin-left: 7px;
+    display: inline-block;
+    font-size: 0;
+}
+
+#login {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, #4316A6 30%, #5207F2 90%);
+}
+
+    #login .centered {
+        width: 400px;
+        height: 200px;
+        top: 50vh;
+        left: 50%;
+        margin-top: -100px;
+        margin-left: -200px;
+        position: fixed;
+    }
+
+        #login .centered h1 {
+            font-size: 0;
+            background-image: url('../images/nav_logo_horizontal.png');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+            height: 60px;
+            margin-bottom: 20px;
+        }
+
+        #login .centered input {
+            width: 100%;
+            background: none;
+            color: #fff;
+            font-family: Roboto, Helvetica, sans-serif;
+            font-weight: 500;
+            padding: 10px;
+            border: none;
+            border-bottom: 1px solid #c7c7c7;
+            margin-bottom: 12px;
+        }
+
+            #login .centered input:focus,
+            #login .centered input:hover {
+                border-color: #fff;
+            }
+
+    #login button {
+        border: none;
+        font-family: Roboto, Helvetica, sans-serif;
+        background-color: #fff;
+        padding: 8px 30px;
+        margin-top: 15px;
+    }
+
+        #login button:focus,
+        #login button:hover {
+            cursor: pointer;
+        }
+
+/* 
+    Power BI Style Overrides
+*/
+
+iframe {
+    border: none;
+}

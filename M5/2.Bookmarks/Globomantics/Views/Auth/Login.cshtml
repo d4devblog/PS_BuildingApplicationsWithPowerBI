@@ -1,0 +1,18 @@
+﻿@{
+}
+
+<div id="login">
+    <div class="centered">
+        <h1>Globomantics</h1>
+
+        @using (Html.BeginForm())
+        {
+            <input type="text" alt="username" placeholder="Username" name="username" id="username" />
+            <input type="password" alt="password" placeholder="Password" />
+
+            <button type="submit">Login</button>
+        }
+
+    </div>
+</div>
+

@@ -1,0 +1,25 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "noEmitOnError": true,
+    "removeComments": false,
+    "sourceMap": false,
+    "target": "es5",
+    "module": "commonjs",
+    "allowSyntheticDefaultImports": true,
+    "lib": [ "dom", "es2015", "es2015.iterable", "es2016" ],
+    "moduleResolution": "node",
+    "jsx": "react",
+    "esModuleInterop": true,
+    "experimentalDecorators": true
+  },
+  "exclude": [
+    "node_modules",
+    "wwwroot"
+  ],
+  "typeRoots": [
+    "types",
+    "./node_modules/@types"
+  ]
+}
